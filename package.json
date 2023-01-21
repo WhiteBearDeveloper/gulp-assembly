@@ -1,0 +1,15 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "Gulp assembly",
+  "scripts": {},
+  "keywords": [
+    "gulp",
+    "js",
+    "scss",
+    "pug",
+    "linters"
+  ],
+  "author": "WhiteBearDeveloper",
+  "license": "WTFPL"
+}
