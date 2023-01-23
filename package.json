@@ -2,7 +2,19 @@
   "name": "gulp",
   "version": "1.0.0",
   "description": "Gulp assembly",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp watch",
+    "build:dev": "gulp build",
+    "build:prod": "gulp build --prod"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [
     "gulp",
     "js",
@@ -11,5 +23,16 @@
     "linters"
   ],
   "author": "WhiteBearDeveloper",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "gulp": "^4.0.2",
+    "husky": "^8.0.3"
+  }
 }
