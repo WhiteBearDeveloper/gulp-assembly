@@ -6,6 +6,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       { "devDependencies": ["gulpfile.babel.js", "gulp/**/*"] }
-    ]
+    ],
+    "implicit-arrow-linebreak": ["error", "below"]
   }
 }
